@@ -1,0 +1,75 @@
+<RestConfig>
+	<Data>
+    <Resource uripart="property">
+			<Source type="FDO">
+				<Provider>OSGeo.SDF</Provider>
+				<ConnectionString>File=..\data\Sheboygan\Parcels.sdf;ReadOnly=FALSE;</ConnectionString>
+				<FeatureClass>SHP_Schema:Parcels</FeatureClass>
+			</Source>
+			<Representation renderer="JSON" pattern=".json"/>
+			<Representation renderer="XML" pattern=".xml"/>
+			<Representation renderer="Template" pattern=".html" mimetype="text/html" >
+				<Templates section="PROPERTY" prefix="PROPERTY_">
+          <Many file="property_html_many.tpl" />
+          <Single file="property_html_single.tpl" />
+          <None file="property_html_none.tpl" />
+          <Error file="property_html_error.tpl" />
+        </Templates>
+				<Method name="GET" defaultcount="20" maxcount="500" />
+			</Representation>
+			<Representation renderer="Template" pattern=".kml" mimetype="application/vnd.google-earth.kml+xml" >
+				<Templates section="PROPERTY" prefix="PROPERTY_">
+          <Many file="property_kml_many.tpl" />
+          <Single file="property_kml_single.tpl" />
+          <None file="property_kml_none.tpl" />
+          <Error file="property_kml_error.tpl" />
+				</Templates>
+				<Method name="GET" maxcount="500" maxbboxwidth="0.009" maxbboxheight="0.009" />
+			</Representation>
+			<Representation renderer="Template" pattern=".kmz" mimetype="application/vnd.google-earth.kmz" >
+				<Templates section="PROPERTY" prefix="PROPERTY_">
+          <Many file="property_kml_many.tpl" />
+          <Single file="property_kml_single.tpl" />
+          <None file="property_kml_none.tpl" />
+          <Error file="property_kml_error.tpl" />
+				</Templates>
+				<Method name="GET" maxcount="500" maxbboxwidth="0.009" maxbboxheight="0.009" />
+			</Representation>			
+		</Resource>
+		<Resource uripart="Parcels">
+			<Source type="FDO">
+				<Provider>OSGeo.SDF</Provider>
+				<ConnectionString>File=..\data\Sheboygan\Parcels.sdf;ReadOnly=FALSE;</ConnectionString>
+				<FeatureClass>SHP_Schema:Parcels</FeatureClass>
+			</Source>
+			<Representation renderer="Odata" />			
+			<Representation renderer="Template" pattern=".html" mimetype="text/html" >
+				<Templates section="PROPERTY" prefix="PROPERTY_">
+					<Many file="property_html_many.tpl" />
+					<Single file="property_html_single.tpl" />
+					<None file="property_html_none.tpl" />
+					<Error file="property_html_error.tpl" />
+				</Templates>
+				<Method name="GET" defaultcount="20" maxcount="500" />
+			</Representation>
+			<Representation renderer="Template" pattern=".kml" mimetype="application/vnd.google-earth.kml+xml" >
+				<Templates section="PROPERTY" prefix="PROPERTY_">
+				  <Many file="property_kml_many.tpl" />
+				  <Single file="property_kml_single.tpl" />
+				  <None file="property_kml_none.tpl" />
+				  <Error file="property_kml_error.tpl" />
+				</Templates>
+				<Method name="GET" maxcount="500" maxbboxwidth="0.009" maxbboxheight="0.009" />
+			</Representation>
+			<Representation renderer="Template" pattern=".kmz" mimetype="application/vnd.google-earth.kmz" >
+				<Templates section="PROPERTY" prefix="PROPERTY_">
+				  <Many file="property_kml_many.tpl" />
+				  <Single file="property_kml_single.tpl" />
+				  <None file="property_kml_none.tpl" />
+				  <Error file="property_kml_error.tpl" />
+				</Templates>
+				<Method name="GET" maxcount="500" maxbboxwidth="0.009" maxbboxheight="0.009" />
+			</Representation>			
+		</Resource>
+	</Data>
+</RestConfig>

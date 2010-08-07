@@ -1,0 +1,320 @@
+/* reset styles via myerweb.com */
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+/* dl, dt, dd, ol, ul, li */
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GeoREST-Specific CSS */
+
+body, html {
+	
+}
+
+body {
+	background-color: #235B26;
+	color: #282828;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 76%;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	font-weight: normal;
+}
+
+a:link, a:visited {
+	color: #0a65ab;
+	text-decoration: none;
+	border-bottom: solid 1px #3d6087;
+}
+
+a:focus, a:hover, a:active {
+	color: #686868;
+	text-decoration: none;
+	border-bottom: solid 1px #baba94;	
+}
+
+#georest-container {
+	width: 70%;
+	min-width: 600px;
+	/*width: 600px;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+#georest-header  {
+	height: 87px;
+	background-color: #fff;
+	border-bottom: solid 1px #c0c0c0;
+}
+
+#georest-logo {
+	display: block;
+	width: 50px;
+	height: 55px;
+	background-image: url(/images/logo-georest.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	border: none;
+}
+
+#georest-title {
+	position: absolute;
+	top: 25px;
+	left: 70px;
+	font-size: 28px;
+	line-height: 1.2;
+	color: #2a4c78;
+	padding-bottom: 4px;
+	font-variant: small-caps;
+}
+
+#georest-footer {
+	background-color: #fff;
+	padding: 2em;
+	border-top: solid 1px #c0c0c0;
+}
+
+#georest-footer a {
+}
+
+#georest-footer-right {
+  text-align: right;
+  float: right;
+}
+
+.georest-white {
+  background-color: #ffffff;
+  padding: 2em;
+}
+
+#georest-map {
+  border: solid 1px #c0c0c0;
+}
+
+.georest-sectionlink {
+  cursor: pointer;
+}
+
+
+/* main content styles */
+
+
+h2, h3,  h4 {
+	color: #2a4c78;
+	font-weight: bold;
+	margin: 1em 0 .5em 0;
+	line-height: 1.2;
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.1em;
+	margin-bottom: 0;
+	/*text-transform: uppercase;*/
+}
+
+p {
+	line-height: 1.8;
+	margin: 0 0 1.4em 0;
+}
+ul, ol {
+	margin-top: 1.6em;
+	margin-bottom: 1.6em;
+}
+
+li {
+	line-height: 1.5;
+	margin-bottom: .3em;
+}
+
+
+/* table styles */
+
+#georest-content table {
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 1px;
+	margin: 1em 0 2em 0;
+}
+
+#georest-content table td, #georest-content table th {
+	padding: .5em;
+	line-height: 1.2;
+	border-collapse: collapse;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 1px;
+	border-style: solid;
+	vertical-align: top;
+}
+
+#georest-content table tr.even td {
+	background-color: #f4f2ef;
+}
+
+#georest-content table th, #georest-content table td.table-header {
+	background-color: #eae7e2;
+	font-weight: bold;
+}
+
+#georest-content table th, #georest-content table td h2, #georest-content table td h3, #georest-content table td h4 {
+	margin: 0;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#georest-content table p {
+	margin: 0;
+	line-height: 1.2;
+}
+
+/* plain tables -- no styling */
+
+#georest-content table.plain {
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: #fff;
+	border-spacing: 0;
+	border-width: 0;
+	margin: 1em 0;
+}
+
+#georest-content table.plain td, #georest-content table.plain th {
+	line-height: 1.2;
+	border-collapse: collapse;
+	border-color: #fff;
+	border-spacing: 0;
+	border-width: 0;
+	border-style: solid;
+}
+
+
+#georest-content table.plain th {
+	background-color: transparent;
+}
+
+#georest-content table th, #georest-content table td h2, #georest-content table td h3, #georest-content table td h4 {
+	margin: 0;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#georest-content table p {
+	margin: 0;
+	line-height: 1.2;
+}
+
+/* table border -- used in apps */
+
+#georest-content table.border {
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 1px;
+	margin: 1em 0 2em 0;
+}
+
+#georest-content table.border td, #georest-content table.border th {
+	padding: .8em;
+	line-height: 1.2;
+	border-collapse: collapse;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#georest-content table.border th {
+	background-color: #eae7e2;
+	font-weight: bold;
+}
+
+
+/* forms styling */
+
+#georest-content form {
+	margin: 1em 0 2em;
+}
+
+#georest-content fieldset {
+	border: solid 1px #c0c0c0;
+	margin: 0 0 2em 0;
+	padding: 1em;
+}
+
+#georest-content legend {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	font-weight: normal;
+	color: #2a4c78;
+	font-size: 1.6em;
+}
+
+#georest-content textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;	
+}
+
+#georest-content label {
+	font-weight: bold;
+}
+
+#georest-content input.submit {
+	background-color: #474747;
+	color: #fff;
+	border: solid 2px #c0c0c0;
+	padding: .2em .4em;
+	cursor: pointer;
+}
+
+.paging {
+	background-color: #eae7e2;
+	font-weight: bold;
+}
+
+a.page-right {
+  text-align: right;
+  float: right;
+}
