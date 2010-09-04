@@ -1,0 +1,25 @@
+<RestConfig>
+	<Data>
+		<Resource uripart="towns">
+			<Source type="FDO">
+				<Provider>King.SpatiaLite</Provider>
+				<ConnectionString>File=../data/SpatialiteDemo/test-2.3.sqlite;ReadOnly=TRUE;</ConnectionString>
+				<FeatureClass>Default:Towns</FeatureClass>
+			</Source>
+			<Representation renderer="JSON" pattern=".json"/>
+			<Representation renderer="XML" pattern=".xml"/>
+			<Representation renderer="Template" pattern=".html" mimetype="text/html" >
+				<Templates section="TOWNS" prefix="TOWNS_">
+					<Many file="towns_html_many.tpl" />
+					<Single file="towns_html_single.tpl" />
+					<None file="towns_html_none.tpl" />
+					<Error file="towns_html_error.tpl" />
+				</Templates>
+				<Method name="GET" defaultcount="20" maxcount="500" />
+			</Representation>
+			<Representation renderer="OData" >
+				<Method name="GET" defaultcount="128" maxcount="500" />
+			</Representation>
+		</Resource>
+	</Data>
+</RestConfig>
