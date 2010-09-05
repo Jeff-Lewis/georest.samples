@@ -15,10 +15,22 @@
 					<None file="towns_html_none.tpl" />
 					<Error file="towns_html_error.tpl" />
 				</Templates>
+        <Order fields="Name" />
 				<Method name="GET" defaultcount="20" maxcount="500" />
 			</Representation>
 			<Representation renderer="OData" >
 				<Method name="GET" defaultcount="128" maxcount="500" />
+        <FeedOverride>
+          <Title>Italian Towns for the SpatiaLite Demo Data</Title>
+          <Author>
+            <Name>GeoREST Project</Name>
+            <Uri>http://www.georest.org/</Uri>
+            <Email>info@georest.org</Email>
+          </Author>
+        </FeedOverride>
+        <EntryOverride>
+          <Title type="Property">Name</Title>
+        </EntryOverride>
 			</Representation>
 		</Resource>
 	</Data>
