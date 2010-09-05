@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html> 
+ <script type="text/javascript">
+ function checkStartURI()
+ {
+	var loc = window.location;
+	if(loc.href.indexOf('file')==0)
+	{
+		document.getElementById('divUriWarning').style.display='block';
+	}
+ }
+</script>
+<head> 
+  <title>Welcome to GeoREST</title> 
+  <link rel="stylesheet" type="text/css" href="/css/georest.css"> 
+  <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/georest-ie6.css"><![endif]--> 
+  <style type="text/css">
+  .large {
+  	font-size: large;
+  }
+  </style>
+</head> 
+<body onload="checkStartURI()"> 
+<div id="georest-container"> 
+  <div id="georest-header"> 
+      <h1 id="georest-title">Welcome to GeoREST</h1> 
+      <a id="georest-logo" href="http://www.georest.org/"></a>
+  </div> 
+  <div id="georest-content" class="georest-white"> 
+  <p>You are viewing this page because you downloaded and ran the GeoREST built-in webserver. Congratulations, it works!</p> 
+  <div id="divUriWarning" style="display:none;" >
+		<p style="color:red" class="large">For examples to run you have to start this page from Web Server.<br>If you are running GeoREST HTTP server use link:<a href="http://localhost:99/index.html">http://localhost:99/index.html</a></p> 
+  </div> 
+  <h2>Administrative Pages</h2>
+  <dl> 
+  <dt><a title="Test Page" href="/rest/hello">Hello World</a></dt>
+  <dd style="padding-top: 10px;">This page allows you to confirm that your installation is functioning properly.<br>&nbsp;</dd> 
+  </dl>
+  <h2>Demo Data</h2>
+  <p>The standard GeoREST install comes with some basic test data.</p>
+  <h3>SpatiaLite Demo (Italy)</h3>
+  <p><a href="http://www.gaia-gis.it/spatialite/">SpatiaLite</a> is a single-file spatial database based on SQLite.  This demo uses SL-King's <a href="http://www.sl-king.com/FdoSpatiaLite/fdospatialite.html">SpatiaLite FDO Provider</a>.</p>
+  <dl> 
+    <dt><a href="/rest/data/towns/.html">Italy Towns paged HTML</a></dt> 
+    <dd style="padding-top: 10px;">Browse through the SpatiaLite demo data, one page at a time.<br>&nbsp;</dd> 
+    <dt><a href="/rest/odata.svc/towns/">Italy Towns OData</a></dt>
+    <dd style="padding-top: 10px;">Interact with the Towns dataset using Microsoft's OData protocol.<br>&nbsp;</dd> 
+  </dl>
+  <h3>SDF Demo (Sheboygan)</h3>
+  <p>SDF is a format used extensively by MapGuide and Autodesk geospatial products</p>
+  <dl> 
+    <dt><a href="/property/index.html">Sheboygan Property HTML Search</a></dt> 
+    <dd style="padding-top: 10px;">Try out a simple HTML search, including OpenSearch integration.<br>&nbsp;</dd> 
+    <dt><a href="/rest/data/property/.html">Sheboygan Property HTML Paged Results</a></dt> 
+    <dd style="padding-top: 10px;">Page through the results, one set at a time.<br>&nbsp;</dd> 
+    <dt><a href="/property/index.kml">Sheboygan Property KML</a></dt>
+    <dd style="padding-top: 10px;">Page through the results, one set at a time.<br>&nbsp;</dd> 
+  </dl>
+  <h3>OData Demo</h3>
+  <p><a href="http://www.odata.org/">OData</a> is an AtomPub-based protocol developed by Microsoft.  It is used by a wide range of publishers (NetFlix, Stack Overflow) and clients (Microsoft Excel 2010, most programming languages natively or via SDKs)</p>
+  <ul> 
+    <li><a href="/rest/odata.svc/">GeoREST OData endpoint</a></li> 
+    <li><a href="/rest/odata.svc/$metadata">GeoREST OData metadata</a></li>
+  </ul>
+  </div> 
+  <div id="georest-footer"> 
+    <div id="georest-footer-right"> 
+      <a href="http://www.georest.org/">http://www.georest.org/</a> 
+    </div> 
+    <div id="georest-footer-left"> 
+      Licensed under Creative Commons 3 CC-BY
+    </div> 
+  </div> 
+</div> 
+</body> 
+</html>

@@ -1,0 +1,250 @@
+
+body {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	margin:0px; 
+	padding: 0;
+	text-align: center; 
+	color: #000000;
+	horizontal-align: center;
+}
+
+table.voka-content {
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 2px;
+	margin: 1em 0 0em 0;
+	horizontal-align: center;
+	font-size:12px;
+}
+
+table.voka-content td, table.voka-content th {
+	padding: .5em;
+	line-height: 1.2;
+	border-collapse: collapse;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 1px;
+	border-style: solid;
+	
+}
+
+table.plain {
+	color: #2a4c78;
+	border-collapse: collapse;
+	border-style: dotted;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 0;
+	margin: 1em 0;
+}
+
+table.plain td, table.plain th {
+	line-height: 1.2;
+	border-collapse: collapse;
+	border-color: #c0c0c0;
+	border-spacing: 0;
+	border-width: 0;
+	border-style: dotted;
+	
+}
+
+
+table.plain th {
+	background-color: transparent;
+}
+
+table.noborder {
+	border-collapse: collapse;
+	border-style: dotted;
+	border-color: #FFFFFF;
+	border-spacing: 0;
+	border-width: 0px;
+	margin: 0em 0 0em 0;
+	horizontal-align: center;
+}
+
+table.noborder td, table.noborder th {
+	line-height: 1.0;
+	border-collapse: collapse;
+	border-color: #FFFFFF;
+	border-spacing: 0;
+	border-width: 0;
+	border-style: dotted;
+}
+
+input.submit {
+	background-color: #474747;
+	color: #fff;
+	border: solid 2px #c0c0c0;
+	padding: .2em .4em;
+	cursor: pointer;
+}
+
+.oneColElsCtrHdr #container {
+	width: 1024px;
+	background: #FFFFFF;
+	margin: 0 auto; 
+	border: 1px solid #2a4c78;;
+	text-align: left;
+}
+.oneColElsCtrHdr #header { 
+	height: 80px;
+	background: #DDDDDD;
+	background-image:url(../images/logo_voka.gif);
+	background-repeat: no-repeat;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	color: #2a4c78;
+	font-variant: small-caps;
+	font-weight: normal;
+	font-size: 90%;
+	border-bottom: solid;
+	border-bottom-color: #2a4c78;	
+	/*padding: 0 15px 0 15px;  */
+}
+
+.headerfont{
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	color: #2a4c78;
+	font-variant: small-caps;
+	font-weight: normal;
+	font-size: 90%;
+}
+
+.oneColElsCtrHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	/*padding: 10px 0;*/ /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	padding: 0;
+}
+.oneColElsCtrHdr #mainContent {
+	width: 1024px;
+	margin: 0 auto;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	color: #2a4c78;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 0; 
+	background: #FFFFFF;
+	
+	
+}
+.oneColElsCtrHdr #footer { 
+	/*padding: 0 15px; */
+	background: #DDDDDD;
+	border-top: solid;
+	border-top-color: #2a4c78;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	font-size:12px;
+} 
+
+.footerfont {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	font-size:12px;
+}
+
+.mainfont {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	font-size: 14px;
+}
+
+.oneColElsCtrHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+.fontstyle1 {
+	font-style: italic; 
+	font-variant: small-caps;
+	color: #2a4c78;
+	font-size: 18px;
+}
+
+.fontstyle2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal; 
+	font-size: 15px;
+	color:#000000;	
+	
+}
+
+legend {
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	font-weight: normal;
+	color: #2a4c78;
+	font-size: 18px;
+}
+
+a:link, a:visited {
+	color: #0a65ab;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a:focus, a:hover, a:active {
+	color: #686868;
+	text-decoration: none;
+	border-bottom: none;	
+}
+
+a.vod:link, a.vod:visited {
+	color: #2A3FAA;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a.vod:focus, a.vod:hover, a.vod:active {
+	color: #888E5B;
+	text-decoration: none;
+	border-bottom: none;	
+}
+
+a.obv:link, a.obv:visited {
+	color: #FF0000;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a.obv:focus, a.obv:hover, a.obv:active {
+	color: #7D231E;
+	text-decoration: none;
+	border-bottom: none;	
+}
+
+a.pre:link, a.pre:visited {
+	color: #26822D;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+a.pre:focus, a.pre:hover, a.pre:active {
+	color: #2A5F55;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.div-1 {
+ position:relative;
+ top:5;
+ left:0;
+ font-color:red; 
+}
+.div-1a {
+ position:relative;
+ top:-15;
+ left:0;
+}
+
+a.page-right {
+  text-align: right;
+  font-size: 75%;
+  float: right;
+}
+
+a.page-left {
+ 
+  font-size: 75%;
+ 
+}
+
+

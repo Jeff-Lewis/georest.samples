@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                        xmlns:geo="http://a9.com/-/opensearch/extensions/geo/1.0/">
+   <ShortName>Property by Address</ShortName>
+   <Description>Search for Sheboygan Properties by Address</Description>
+   <Url 
+     type="text/html"
+     template="http://localhost:99/rest/data/property/.html?filter_1_and_like_RPROPAD={searchTerms}&amp;bbox={geo:box?}" />
+   <LongName>Sheboygan Properties by Address</LongName>
+   <Query role="example" searchTerms="Center" />
+   <Attribution>
+     Sample Data for GeoREST application
+   </Attribution>
+   <AdultContent>false</AdultContent>
+   <Language>en-ca</Language>
+ </OpenSearchDescription>
