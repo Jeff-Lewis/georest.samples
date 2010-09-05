@@ -31,7 +31,7 @@
         </tr>
     {{/PROPERTY}}
         <tr>
-          <td colspan="4" class="paging">
+          <td colspan="3" class="paging">
             {{#NEXT_PAGE_SECTION}}<a class="page-right" href="{{NEXT_PAGE}}">Next</a>{{/NEXT_PAGE_SECTION}}
             {{#PREVIOUS_PAGE_SECTION}}<a href="{{PREVIOUS_PAGE}}">Previous</a>{{/PREVIOUS_PAGE_SECTION}}
           </td>
